@@ -3,7 +3,7 @@
 
 
 var ground, ground2;
-var block1, block2, block3, block4, block5;
+var block1, block2, block3, block4, block5, block6, block7, block8,block9;
 var polygon, polygonImg, slingShot;
 
 function preload() {
@@ -19,11 +19,23 @@ function setup(){
 ground=new Ground(100,400,5000,20);
 ground2=new Ground(400,200,200,20);
 
+
+//last level
 block1 = new Block(330, 235, 30, 40);
 block2 = new Block(360, 235, 30, 40);
 block3 = new Block(390, 235, 30, 40);
 block4 = new Block(420, 235, 30, 40);
 block5 = new Block(450, 235, 30, 40);
+
+//middle level
+block6 = new Block(360,195,30,40);
+block7 = new Block(390,195,30,40);
+block8 = new Block(420,195,30,40);
+
+//top
+block9 = new Block(390,155,30,40);
+
+
 
 polygon = Bodies.circle(50,200,20);
     World.add(world.polygon);
